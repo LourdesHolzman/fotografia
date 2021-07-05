@@ -1,0 +1,53 @@
+
+@media only screen and (max-width: $breakpoint-sm) {
+
+    html{
+        width: 100vw;
+    }
+
+    .grid-padre {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        'infoContacto'
+        'styleform'
+        ;
+    }
+
+    .sobremi-centrado{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px repeat(2, auto) 50px;
+        grid-template-areas: 
+        'img p'
+        'h1'
+        ;
+    }
+
+}
+
+/* tablet */
+
+@media only screen and (min-width: 571px) and (max-width:$breakpoint-md) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .grid-padre {
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            'infoContacto'
+            'styleform'
+        ;
+    }
+
+    .infoContacto{
+        grid-template-columns:  auto;
+        grid-template-rows: auto;
+    }
+
+}
+
+/* Dekstop */
+
+@media only screen and (min-width: 961px) {} 

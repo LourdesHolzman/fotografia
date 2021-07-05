@@ -1,0 +1,15 @@
+// Extend 
+
+%flexbox {
+    display: flex;     
+    flex-direction: row-reverse; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+%grid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+

@@ -1,0 +1,78 @@
+/*header*/
+
+header { 
+    background-color: $bg-color;
+    display: grid;
+
+    .logo{ width: 200px; 
+        margin-left: 30px;
+     }
+
+div{
+
+    .nav-wrapper {
+        text-align: center;
+     }
+
+    #navbarScroll 
+    .nav-link {
+     color: $text-color;
+     text-decoration: none;
+     font-size: 20px;
+     }
+
+    #navbarScroll
+    .dropdown-menu{
+     background-color: $bg-color;
+     }
+
+    .link {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 20px;
+        }
+
+    li {
+        display: inline-block;
+        width: 150px;
+        position:relative;
+        font-size: 14px
+    }
+
+    ul {
+        ul{
+            background-color: $bg-color;
+            position: absolute;
+            display: none;
+            padding: 20px;
+            
+            li{
+                a{
+                    font-size: 15px;
+                    color: $text-color;
+                    text-decoration: none;
+                    display: block;
+                    padding: 10px;
+
+                }
+            }
+        }
+    }
+}
+    
+    .center {
+        padding: 20px;
+        display: grid;
+        align-items: flex-end;
+        justify-items: center;
+        }
+    
+    .tamañoLogos {
+        width: 20px;
+        margin-left: 20px;
+        padding: 10px;
+        }
+
+}
+ 
+

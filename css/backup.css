@@ -1,0 +1,271 @@
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@font-face {
+    font-family: 'inter';
+    src: url('../Fotografía/tipografia/Inter-VariableFont_slnt\,wght.ttf') format('ttf');
+}
+
+p{
+    margin-left: 20px;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: 'inter';
+}
+
+.inicio{
+    background-image: url(imagenes/DSC_0185kkk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*header*/
+header{
+    background-color: black;
+    display: grid;
+    }
+
+.logo{  
+    width: 200px; 
+    margin-left: 30px;
+}
+
+.nav-wrapper {
+    text-align: center;
+}
+
+#navbarScroll .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'inter';
+    }
+#navbarScroll
+.dropdown-menu{
+    background-color: black;
+}
+
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'inter';
+    }
+
+
+
+li {
+    display: inline-block;
+    width: 150px;
+    position:relative;
+    font-size: 14px
+    }
+    
+ul ul {
+    background-color: black;
+    position: absolute;
+    display: none;
+    padding: 20px;
+    }
+
+ul ul li a {
+    font-size: 15px;
+    font-family: 'inter';
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    }
+    
+ul li:hover ul {
+    display:block;
+    }
+ 
+
+.center {
+    padding: 20px;
+    display: grid;
+    align-items: flex-end;
+    justify-items: center;
+    }
+    
+
+.tamañoLogos {
+    width: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    }
+    
+
+/*footer*/
+footer{
+    margin: 100px;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    }
+
+.tamañoLogoInst {
+    width: 20px;
+    }
+
+
+/*TRABAJOS*/
+.encabezado {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 60px;
+    font-family: 'inter';
+    }
+
+.trabajosImagen {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.textoEncima {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+    }
+
+.tamañoImagen{
+    padding: 20px;
+    width: 300px;
+    }
+    
+/*
+.tamañoImagen:hover{
+    filter: blur(3px);
+}
+*/
+
+.contenedor {
+    margin: 40px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.sectionTrabajos {
+    margin: 20px;
+}
+
+/*SOBRE MI*/
+
+.sobremi-centrado {
+    display: grid;
+    grid-template-areas: 
+    'h2' 
+    'img p';
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.encabezadoDos {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 60px;
+    font-family: 'inter';
+}
+
+.infoSobreMi {
+    display: flex;     
+    flex-direction: row-reverse; 
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+/*CONTACTO*/
+
+.grid-padre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.infoContacto{
+   display: grid;
+   grid-template-rows: 3fr 3fr;
+   justify-content: space-between;
+   height: 300px;
+}
+
+.encabezadoTres {
+    margin: 20px;
+    padding: 20px;
+    color: black;
+    font-size: 60px;
+    font-family: 'inter';
+}
+
+.subencabezado {
+    margin-left: 10px;
+    padding: 5px;
+    color: black;
+    font-size: 20px;
+    font-family: 'inter';
+}
+
+.contactame {
+   display: flex;     
+   flex-direction: row-reverse; 
+   justify-content: flex-start;
+   height: 0px;
+
+}
+
+.styleform {
+    font-family: 'inter';
+    margin-left: 50px;
+    padding: 50px;
+    font-size: 18px;
+    color: black;  
+}
+
+/* Mobile styles */
+
+@media only screen and (max-width: 400px) {
+    /* Ordinary CSS rules */
+
+    body {
+        background-color: #f09a9d6b;
+    }
+
+}
+
+/* Desktop styles */
+
+@media only screen and (min-width: 401px) {
+
+    body {
+        background-color: #f5cf8e98;
+    }
+
+}
