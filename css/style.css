@@ -1,10 +1,8 @@
 @charset "UTF-8";
-
 @font-face {
   font-family: "inter";
   src: url("../Fotografía/tipografia/Inter-VariableFont_slnt,wght.ttf") format("ttf");
 }
-
 .infoSobreMi {
   display: flex;
   flex-direction: row-reverse;
@@ -18,88 +16,43 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 576px) {
-  html {
-    width: 100vw;
-  }
-
-  .grid-padre {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "infoContacto""styleform";
-  }
-
-  .sobremi-centrado {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px repeat(2, auto) 50px;
-    grid-template-areas: "img p""h1";
-  }
-}
-
-/* tablet */
-@media only screen and (min-width: 571px) and (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-  }
-
-  .grid-padre {
-    grid-template-columns: 2fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "infoContacto""styleform";
-  }
-
-  .infoContacto {
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-  }
-}
-
-/* Dekstop */
 /*header*/
 header {
   background-color: black;
   display: grid;
 }
-
 header .logo {
   width: 200px;
   margin-left: 30px;
 }
-
 header div .nav-wrapper {
   text-align: center;
 }
-
 header div #navbarScroll .nav-link {
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
-
 header div #navbarScroll .dropdown-menu {
   background-color: black;
 }
-
 header div .link {
   color: white;
   text-decoration: none;
   font-size: 20px;
 }
-
 header div li {
   display: inline-block;
   width: 150px;
   position: relative;
   font-size: 14px;
 }
-
 header div ul ul {
   background-color: black;
   position: absolute;
   display: none;
   padding: 20px;
 }
-
 header div ul ul li a {
   font-size: 15px;
   color: white;
@@ -107,14 +60,12 @@ header div ul ul li a {
   display: block;
   padding: 10px;
 }
-
 header .center {
   padding: 20px;
   display: grid;
   align-items: flex-end;
   justify-items: center;
 }
-
 header .tamañoLogos {
   width: 20px;
   margin-left: 20px;
@@ -129,7 +80,6 @@ footer {
   justify-items: center;
   align-items: center;
 }
-
 footer .tamañoLogoInst {
   width: 20px;
 }
@@ -156,64 +106,59 @@ footer .tamañoLogoInst {
 }
 
 .inicio {
-  background-image: url(../imagenes/DSC_0185kkk.jpg);
+  background-image: url(https://i.ibb.co/f8BsSZ7/DSC-0185kkk.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/*INICIO*/
-.inicio {
-  display: grid;
-  grid-template-columns: repeat(12, 1);
-  grid-template-rows: repeat(12, minmax(150px, auto));
-  grid-gap: 10px;
-}
-
-.inicio header {
-  display: grid;
-  grid-column: 1/12;
-  grid-row: 1;
-}
-
 /*CONTACTO*/
-.grid-padre {
+.contact_wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1);
-  grid-template-rows: repeat(4, minmax(150px, auto));
-  grid-gap: 10px;
-  max-width: 960px;
-  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
-
-.infoContacto {
-  display: grid;
-  grid-column: 1/3;
-  grid-row: 2/4;
-  align-items: center;
-  justify-content: center;
-  justify-self: start;
+.contact_wrapper div {
+  width: 100%;
 }
-
-.contactame {
-  display: grid;
-  grid-column: 3/5;
-  grid-row: 2/5;
-  align-items: stretch;
-  font-size: 18px;
-  color: black;
-  justify-self: center;
+.contact_wrapper .title {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
-
-.contactame .styleform div {
-  grid-area: auto;
+.contact_wrapper .info_container {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
-
-.tamañoLogos {
-  width: 20px;
-  margin-left: 20px;
-  padding: 10px;
+.contact_wrapper .info_container div {
+  margin: 0 auto;
+  width: 80%;
+}
+.contact_wrapper .form_container {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.contact_wrapper .form_container input, .contact_wrapper .form_container textarea {
+  border: none;
+  border-bottom: 3px solid #da5252;
+  padding: 5px;
+  outline: none;
+  text-align: center;
+  width: 80%;
+  max-width: 70%;
+  transition: all 250ms ease;
+  animation: color 5s ease infinite;
+  animation-play-state: paused;
+}
+.contact_wrapper .form_container input:focus {
+  width: 100%;
+  animation-play-state: running;
+}
+.contact_wrapper .form_container textarea:focus {
+  width: 100%;
+  animation-play-state: running;
 }
 
 /*SOBRE MI*/
@@ -223,13 +168,45 @@ footer .tamañoLogoInst {
 }
 
 .sobremi-centrado {
-  grid-template-areas: "h1""img p";
+  grid-template-areas: "h1" "img p";
   grid-template-columns: 1fr 1fr;
 }
 
 .infoSobreMi {
   margin-left: 20px;
   padding: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  html {
+    width: 100vw;
+  }
+
+  .contact_wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "title" "info" "form_container";
+  }
+  .contact_wrapper .sobremi-centrado {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px repeat(2, auto) 50px;
+    grid-template-areas: "img p" "h1";
+  }
+  .contact_wrapper .title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contact_wrapper .info_container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .contact_wrapper .form_container {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

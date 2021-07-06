@@ -49,24 +49,3 @@
 
     }
 }
-
-/*SOBRE MI*/
-
-.tamañoImagen {
-    padding: 20px;
-    width: 300px;
-}
-
-.sobremi-centrado {
-    @extend %grid; 
-    grid-template-areas: 
-    'h1' 
-    'img p';
-    grid-template-columns: 1fr 1fr;
-}
-
-.infoSobreMi {
-    @extend %flexbox;
-    margin-left: 20px;
-    padding: 10px;
-}
