@@ -112,7 +112,8 @@ footer .tamañoLogoInst {
 }
 
 .inicioEncabezado {
-  font-size: 15px;
+  text-align: center;
+  margin: 25vh 0;
   color: white;
 }
 

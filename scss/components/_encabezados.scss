@@ -14,15 +14,16 @@
     padding: map-get($encabezado, padding);
     color: $color-p;
     font-size: map-get($encabezado, font-size);
-    }
+}
 
 //inicio
- .inicioEncabezado {
-     font-size: 15px;
-     color: $text-color;
- }
+.inicioEncabezado {
+    text-align: center;
+    margin: 25vh 0;
+    color: $text-color;
+}
 
- .title {
-     width: 100%;
-     text-align: left;
- }
+.title {
+    width: 100%;
+    text-align: left;
+}
