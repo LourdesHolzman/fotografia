@@ -21,12 +21,26 @@ header {
   background-color: black;
   display: grid;
 }
+header .navbar .navbar-toggler {
+  margin-left: auto;
+}
+header .navbar .navbar-toggler-icon {
+  display: flex;
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
 header .logo {
   width: 200px;
   margin-left: 30px;
 }
+header .nav-wrapper {
+  margin-left: auto;
+}
 header div .nav-wrapper {
   text-align: center;
+  margin-left: auto;
 }
 header div #navbarScroll .nav-link {
   color: white;
@@ -74,11 +88,8 @@ header .tamañoLogos {
 
 /*footer*/
 footer {
-  margin: 100px;
+  margin: auto;
   padding: 20px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
 }
 footer .tamañoLogoInst {
   width: 20px;
@@ -105,6 +116,11 @@ footer .tamañoLogoInst {
   color: white;
 }
 
+.title {
+  width: 100%;
+  text-align: left;
+}
+
 .inicio {
   background-image: url(https://i.ibb.co/f8BsSZ7/DSC-0185kkk.jpg);
   background-position: center;
@@ -125,6 +141,8 @@ footer .tamañoLogoInst {
 .contact_wrapper .title {
   grid-column-start: 1;
   grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 .contact_wrapper .info_container {
   display: flex;
@@ -140,25 +158,33 @@ footer .tamañoLogoInst {
   grid-column-start: 2;
   grid-column-end: 2;
 }
-.contact_wrapper .form_container input, .contact_wrapper .form_container textarea {
-  border: none;
-  border-bottom: 3px solid #da5252;
+.contact_wrapper .form_container form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.contact_wrapper .form_container input,
+.contact_wrapper .form_container select,
+.contact_wrapper .form_container textarea {
+  width: 70%;
+  margin: 0.5rem 0;
+}
+.contact_wrapper .form_container input,
+.contact_wrapper .form_container textarea,
+.contact_wrapper .form_container select {
+  border: 3px solid #0080003d;
   padding: 5px;
-  outline: none;
   text-align: center;
-  width: 80%;
-  max-width: 70%;
-  transition: all 250ms ease;
-  animation: color 5s ease infinite;
-  animation-play-state: paused;
+  outline: none;
+  transition: all 0.5s ease;
 }
-.contact_wrapper .form_container input:focus {
-  width: 100%;
-  animation-play-state: running;
+.contact_wrapper .form_container textarea#mensaje:focus {
+  text-align: left;
 }
-.contact_wrapper .form_container textarea:focus {
-  width: 100%;
-  animation-play-state: running;
+.contact_wrapper .form_container textarea:focus, .contact_wrapper .form_container select:focus, .contact_wrapper .form_container input:focus {
+  border: 3px solid green;
 }
 
 /*SOBRE MI*/
@@ -169,12 +195,24 @@ footer .tamañoLogoInst {
 
 .sobremi-centrado {
   grid-template-areas: "h1" "img p";
-  grid-template-columns: 1fr 1fr;
 }
 
 .infoSobreMi {
   margin-left: 20px;
   padding: 10px;
+}
+
+.pictures-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+  margin: 1rem;
+}
+.pictures-container img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -207,6 +245,11 @@ footer .tamañoLogoInst {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
