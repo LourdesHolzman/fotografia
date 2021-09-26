@@ -1,9 +1,10 @@
 <?php
+
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 $asunto = $_POST['asunto'];
-​
+
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
@@ -19,6 +20,6 @@ $asunto = 'Mensaje de mi sitio web';
 ​
 mail($para, $asunto, utf8_decode($mensaje), $header);
 ​
-header('Location:index.html');
+header('Location:index.html');*/
 ​
 ?>

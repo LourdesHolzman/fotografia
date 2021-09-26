@@ -1,0 +1,35 @@
+.my-momy-dal-container{
+    z-index: 1011;
+    background: black;
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.my-modal-backdrop{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 1010;
+}
+
+.my-modal-wrapper{
+    visibility:hidden;
+    position:fixed;
+    width: 100vw;
+    display: flex;
+    height: 100vh;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;    
+    opacity: 0;
+    transition: all 1s;
+}
