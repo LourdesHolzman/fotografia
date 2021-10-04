@@ -1,0 +1,37 @@
+productsArr =  [
+    {
+        "id": 1,
+        "title": "Obreras",
+        "price": "$3200 c/u",
+        "img": "https://i.ibb.co/hYykMC7/DSC06546ppp.jpg",
+        "description": "Medidas: 50 x 70 cm \nFotograía impresa en papel canon \nPalatine Fiber Rag 310gr"
+    },
+    {
+        "id": 2,
+        "title": "Lolo",
+        "price": "$3000 c/u",
+        "img": "https://i.ibb.co/BKhW1w3/DSC06606pp.jpg",
+        "description": "Medidas: 50 x 70 cm \nFotograía impresa en papel canon \nPalatine Fiber Rag 310gr"
+    },
+    {
+        "id": 3,
+        "title": "Soledad",
+        "price": "$2000 c/u",
+        "img": "https://i.ibb.co/Kz0Wrmz/DSC-0099.jpg",
+        "description": "Medidas: 50 x 70 cm \nFotograía impresa en papel canon \nPalatine Fiber Rag 310gr"
+    },
+    {
+        "id": 4,
+        "title": "Ramona",
+        "price": "$3000 c/u",
+        "img": "https://i.ibb.co/FsJTGPg/13227366-1066340176736975-8160424802170678090-o.jpg",
+        "description": "Medidas: 50 x 70 cm \nFotograía impresa en papel canon \nPalatine Fiber Rag 310gr"
+    },
+    {
+        "id": 5,
+        "title": "Primavera",
+        "price": "$5000 c/u",
+        "img": "https://i.ibb.co/1JFPmCY/DSC06570.jpg",
+        "description": "Medidas: 50 x 70 cm \nFotograía impresa en papel canon \nPalatine Fiber Rag 310gr"
+    }
+]

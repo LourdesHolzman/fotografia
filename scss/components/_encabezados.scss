@@ -16,6 +16,16 @@
     font-size: map-get($encabezado, font-size);
 }
 
+//tienda
+.encabezadoCuatro {
+        grid-column-start: 1;
+        grid-row: 1/1;
+        margin: map-get($encabezado, margin);
+        padding: map-get($encabezado, padding);
+        color: $color-p;
+        font-size: map-get($encabezado, font-size);
+    }
+
 //inicio
 .inicioEncabezado {
     text-align: center;

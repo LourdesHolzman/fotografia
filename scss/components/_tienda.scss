@@ -1,4 +1,4 @@
-.my-momy-dal-container{
+.my-momy-dal-container {
     z-index: 1011;
     background: black;
     position: absolute;
@@ -10,9 +10,22 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    justify-content: space-evenly;
+
+    #modalZipInput {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    #modalPromptText {
+        margin: 15px 0;
+    }
 }
 
-.my-modal-backdrop{
+.my-modal-backdrop {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -20,16 +33,55 @@
     z-index: 1010;
 }
 
-.my-modal-wrapper{
-    visibility:hidden;
-    position:fixed;
+.my-modal-wrapper {
+    visibility: hidden;
+    position: fixed;
     width: 100vw;
     display: flex;
     height: 100vh;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
-    align-items: center;    
+    align-items: center;
     opacity: 0;
     transition: all 1s;
+}
+
+.product {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 6rem;
+    grid-column-gap: 1rem;
+    margin: 1rem;
+}
+
+#product-list img {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    width: 300px;
+
+}
+
+.product-description {
+    white-space: pre-line;
+}
+
+.product-price-btn-container {
+    display: flex;
+    justify-content: space-around;
+
+    .product-price {
+        display: grid;
+        margin: auto 0;
+    }
+}
+
+
+
+.product-title {
+    display: grid;
+    justify-items: center;
 }
